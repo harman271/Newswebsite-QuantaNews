@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuantaNews - Breaking News, Latest Updates, and Analysis</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" onclick="home()">QuantaNews</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" onclick="home()">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="fetchWorldNews()">World</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="fetchTechnologyNews()">Technology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="fetchBusinessNews()">Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="fetchSportsNews()">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="fetchEntertainmentNews()">Entertainment</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="form-inline my-2 my-lg-0">
+                <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search for more topics" aria-label="Search">
+            </form>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="searchitems text-center">
+                    <h1>Searched: <span id="searcheditems">India</span></h1>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="container">
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
