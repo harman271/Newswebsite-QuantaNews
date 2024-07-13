@@ -1,10 +1,4 @@
       const apiKey = 'be1085ddd51f4f4aaec60e075ab09f96';
-
-        window.addEventListener("contextmenu", event => {
-            alert("Mouse Right click is not allowed");
-            event.preventDefault();
-        });
-
         async function fetchData(topic = 'india') {
             try {
                 const container = document.getElementById('container');
