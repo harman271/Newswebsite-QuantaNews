@@ -1,4 +1,4 @@
-      const apiKey = 'be1085ddd51f4f4aaec60e075ab09f96';
+      const apiKey = process.env.NEWS_API_KEY;
         async function fetchData(topic = 'india') {
             try {
                 const container = document.getElementById('container');
